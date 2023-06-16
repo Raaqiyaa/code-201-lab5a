@@ -8,16 +8,21 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
+function sum(a,b) { 
+let calc = a + b
+let string = "The sum of " + a + " and " + b + " is equal to " + calc +"."
 
+return [calc, string]
 }
+console.log(calc)
 
-// Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
+
+
+
 /* Problem 2
 Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
@@ -26,16 +31,20 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
+function multiply(a, b) { 
+    let multi = a * b 
+    let string = "The product of " + a + " and " + b + " is " + multi + "."
+
+    return[multi, string]
 
 }
 
-// Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
-/////////////////////////////////////
+////////////////////////////////////
+
 /* Problem 3
 Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
 
@@ -47,16 +56,28 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+function sumAndMultiply(a, b, c) { 
+let sum1 = sum( a, b)
+let sum2 = sum(sum1 [0],c);
+    
+let multi1 = multiply(a,b)
+let multi2 = multiply(multi1[0],c)
+
+let string1 = a + " and " + b + " and " + c + " sum to" + sum2 + "."
+let string2 = " the product of " + a + " and " + b + " and " + c + " is " + multi2 + "."
+
+return[sum2,multi2,string1,string2]
+
 
 }
 
-// Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
+
+
 /* Problem 4
 Write a function called sumArray() that takes in an array of numbers as its single argument and then returns an array where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
@@ -67,11 +88,10 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-let testArray = [2, 3, 4]; //eslint-disable-line
+let testArray = [2, 3, 4]; 
 
-function sumArray(sumArr) { //eslint-disable-line
-
-}
+function sumArray(sumArr) {} 
+    let sumArray = 
 
 // Here is the test for sumArray(); uncomment it to run it
 
